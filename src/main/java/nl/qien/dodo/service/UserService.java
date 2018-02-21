@@ -20,4 +20,14 @@ public class UserService {
 		userRepository.save(user);
 	}
 
+	public User getUserById(Long id) {
+		return userRepository.findOne(id);
+	}
+	
+	
+	public User findUserByUsername(final String username) {
+		return userRepository.findByUsername(username);
+	}
+	
+
 }

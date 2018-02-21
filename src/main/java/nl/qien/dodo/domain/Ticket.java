@@ -16,64 +16,75 @@ import javax.persistence.TemporalType;
 
 @Entity
 public class Ticket {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long ticketId;
-	private String ticketNumber;
-	private String ticketEventName;
-	private String ticketSeating;
-	private String ticketVenueLocation;
-	
+	private long ticketid;
+	private String ticketnumber;
+	private String ticketeventname;
+	private String ticketseating;
+	private String ticketvenuelocation;
+
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date ticketStartDateTime;
-	
+	private Date ticketstartdatetime;
+
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date ticketEndDateTime;
-	
-	public long getTicketId() {
-		return ticketId;
+	private Date ticketenddatetime;
+
+	public long getTicketid() {
+		return ticketid;
 	}
-	public void setTicketId(long ticketId) {
-		this.ticketId = ticketId;
+
+	public void setTicketid(long ticketid) {
+		this.ticketid = ticketid;
 	}
-	public String getTicketNumber() {
-		return ticketNumber;
+
+	public String getTicketnumber() {
+		return ticketnumber;
 	}
-	public void setTicketNumber(String ticketNumber) {
-		this.ticketNumber = ticketNumber;
+
+	public void setTicketnumber(String ticketnumber) {
+		this.ticketnumber = ticketnumber;
 	}
-	public String getTicketEventName() {
-		return ticketEventName;
+
+	public String getTicketeventname() {
+		return ticketeventname;
 	}
-	public void setTicketEventName(String ticketEventName) {
-		this.ticketEventName = ticketEventName;
+
+	public void setTicketeventname(String ticketeventname) {
+		this.ticketeventname = ticketeventname;
 	}
-	public String getTicketSeating() {
-		return ticketSeating;
+
+	public String getTicketseating() {
+		return ticketseating;
 	}
-	public void setTicketSeating(String ticketSeating) {
-		this.ticketSeating = ticketSeating;
+
+	public void setTicketseating(String ticketseating) {
+		this.ticketseating = ticketseating;
 	}
-	public String getTicketVenueLocation() {
-		return ticketVenueLocation;
+
+	public String getTicketenuelocation() {
+		return ticketvenuelocation;
 	}
-	public void setTicketVenueLocation(String ticketVenueLocation) {
-		this.ticketVenueLocation = ticketVenueLocation;
+
+	public void setTicketenuelocation(String ticketenuelocation) {
+		this.ticketvenuelocation = ticketenuelocation;
 	}
-	public Date getTicketStartDateTime() {
-		return ticketStartDateTime;
+
+	public Date getTicketstartdatetime() {
+		return ticketstartdatetime;
 	}
-	public void setTicketStartDateTime(Date ticketStartDateTime) {
-		this.ticketStartDateTime = ticketStartDateTime;
+
+	public void setTicketstartdatetime(Date ticketstartdatetime) {
+		this.ticketstartdatetime = ticketstartdatetime;
 	}
-	public Date getTicketEndDateTime() {
-		return ticketEndDateTime;
+
+	public Date getTicketenddatetime() {
+		return ticketenddatetime;
 	}
-	public void setTicketEndDateTime(Date ticketEndDateTime) {
-		this.ticketEndDateTime = ticketEndDateTime;
+
+	public void setTicketenddatetime(Date ticketenddatetime) {
+		this.ticketenddatetime = ticketenddatetime;
 	}
-	
-	
 
 }
