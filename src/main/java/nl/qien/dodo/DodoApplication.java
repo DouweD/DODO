@@ -1,4 +1,4 @@
-package nl.qien.dodo.dodo;
+package nl.qien.dodo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

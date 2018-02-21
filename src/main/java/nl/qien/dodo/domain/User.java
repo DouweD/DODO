@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.Columns;
+
 /*
  * Een user heeft vooralsnog een id, username, first name, last name, email en phone number
  * 
@@ -16,11 +18,11 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String userName;
-	private String firstName;
-	private String lastName;
+	private String username;
+	private String firstname;
+	private String lastname;
 	private String email;
-	private String phoneNumber;
+	private String phonenumber;
 	
 	
 	public long getId() {
@@ -30,22 +32,22 @@ public class User {
 		this.id = id;
 	}
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.username = userName;
 	}
 	public String getFirstName() {
-		return firstName;
+		return firstname;
 	}
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstname = firstName;
 	}
 	public String getLastName() {
-		return lastName;
+		return lastname;
 	}
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastname = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -54,10 +56,10 @@ public class User {
 		this.email = email;
 	}
 	public String getPhoneNumber() {
-		return phoneNumber;
+		return phonenumber;
 	}
 	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+		this.phonenumber = phoneNumber;
 	}
 	
 	
